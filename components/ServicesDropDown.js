@@ -7,6 +7,7 @@ import {
 } from "@chakra-ui/react"
 import { ChevronDownIcon, ChevronUpIcon } from '@chakra-ui/icons'
 import { useState } from "react"
+import Link from "next/link"
 
 export default function ServicesDropDown() {
 const [Open, setOpen] = useState(false)
@@ -15,6 +16,8 @@ const [Open, setOpen] = useState(false)
 
 
         <Button
+        variant="link"
+        colorScheme="black"
                         transitionDelay="10s"
 
         onMouseEnter={()=>setOpen(true)}
@@ -23,19 +26,23 @@ const [Open, setOpen] = useState(false)
 
 <Flex marginTop="40px" gap={10} onMouseEnter={()=>setOpen(true)}
                 onMouseLeave={()=>setOpen(false)} 
-                background="honeydew"
-                
-                position="absolute" display={Open?"flex":"none"}  padding={10}>
+                background="white"
+                borderWidth="1px"
+                zIndex={1000}
+                position="absolute"
+                top="1%"
+                marginLeft="12%"
+                display={Open?"flex":"none"}  padding={10}>
 
                     <Flex gap={5} flexDir="column">
-<Button>Accounting & Bookkeeping</Button>
-                <Button>Tax Services</Button>
-                <Button>Audit & Assurance</Button>
+<Link href="Accounting_Bookkeeping">Accounting & Bookkeeping</Link>
+                <Link href="Tax">Tax Services</Link>
+                <Link href="Audit_Assurance">Audit & Assurance</Link>
                 </Flex>
                 <Flex gap={5} flexDir="column">
-                <Button>CFO Services</Button>
-                <Button>VAT Services</Button>
-                <Button>Company Liquidation</Button>
+                <Link href="CFO">CFO Services</Link>
+                <Link href="VAT">VAT Services</Link>
+                <Link href="Company_Liquidation">Company Liquidation</Link>
                 </Flex>
 </Flex>
         </>

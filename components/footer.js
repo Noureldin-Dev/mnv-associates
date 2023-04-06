@@ -5,10 +5,19 @@ import Image from 'next/image'
 import Facebook from "../public/Facebook.svg"
 import Instagram from "../public/Instagram.svg"
 import Linkedin from "../public/Linkedin.svg"
-
+import BookConsulation from './BookConsulation'
+import ArticlesCarousel from "./ArticlesCarousel"
+import CrossSell from "./CrossSell"
 function Footer() {
   return (
-<Flex id='Footer' flexWrap="wrap" gap="72px"  height={307} alignItems="center" justifyContent="space-between" padding="64px 64px 64px 64px">
+    <Flex padding="64px 64px" gap="0" flexDir="column">
+
+      <BookConsulation/>
+
+<CrossSell/>
+
+<ArticlesCarousel/>
+<Flex id='Footer' flexWrap="wrap" gap="72px"  height={307} alignItems="center" justifyContent="space-between" >
 
     <Flex className='FooterChild'  gap={6} alignItems="center" justifyContent="center" flexDir="column">
     <Image src={Logo} width={100} height={100} />
@@ -39,11 +48,12 @@ height="57px"
       </Flex>
     </Flex>
 
-<Flex  height="100%" justifyContent="center" className='FooterChild' flexDir="column">
+<Flex  height="50%" justifyContent={["flex-start","flex-start","flex-start","center"]} className='FooterChild' flexDir="column">
 <Text className='Heading5'>Stop wasting time.</Text>
 <Text className='Heading5'>Let the experts handle your Accounting.</Text>
     
     </Flex>
+</Flex>
 </Flex>
   )
 }

@@ -1,5 +1,6 @@
 *{
     font-family: 'Rubik';
+    color: #1A0806;
 }
 
 
@@ -8,10 +9,32 @@
 }
 
 
+#SplashImage{
+    width: 370px;
+    height: 370px;
+    /* background-color: #121212; */
+}
+
+#MAIN {
+    padding:0px 64px;
+}
 
 @media only screen and (max-width: 768px) {
-    /* For mobile phones: */
 
+    #MAIN {
+        padding:0px 32px;
+    }
+
+    .HideOnMobile{
+        display: none;
+    }
+    /* For mobile phones: */
+    #SplashImage{
+        width: 170px;
+        height: 170px;
+        display: none;
+        /* background-color: #121212; */
+    }
 
     .FooterChild {
         flex-basis: 100%;
@@ -41,12 +64,14 @@ padding: 16px 32px;
 gap: 16px;
 
 width: 173px;
+min-height: 57px;
+max-height: 57px;
 height: 57px;
 
 /* Gradient */
 
 background: linear-gradient(90deg, #25232D 0%, #EC4B36 100%);
-box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.16), 0px 41.7776px 33.4221px rgba(0, 0, 0, 0.115017), 0px 22.3363px 17.869px rgba(0, 0, 0, 0.0953772), 0px 12.5216px 10.0172px rgba(0, 0, 0, 0.08), 0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0646228), 0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0449833);
+box-shadow: 0px 10px 80px rgba(0, 0, 0, 0.16), 0px 21.7776px 33.4221px rgba(0, 0, 0, 0.115017), 0px 12.3363px 17.869px rgba(0, 0, 0, 0.0953772), 0px 12.5216px 10.0172px rgba(0, 0, 0, 0.08), 0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0646228), 0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0449833);
 border-radius: 100px;
 
 /* Inside auto layout */
@@ -61,11 +86,7 @@ flex-grow: 0;
 
 .Heading1{
 
-    position: absolute;
-    width: 430px;
-    height: 105px;
-    left: 29.5px;
-    top: 33px;
+
     
     font-family: 'Rubik';
     font-style: normal;
@@ -84,11 +105,7 @@ flex-grow: 0;
 
 .Heading2{
 
-    position: absolute;
-    width: 333px;
-    height: 79px;
-    left: 28px;
-    top: 180px;
+
     
     font-family: 'Rubik';
     font-style: normal;
@@ -106,11 +123,7 @@ flex-grow: 0;
 /* Heading 3 */
 .Heading3 {
 
-    position: absolute;
-    width: 235px;
-    height: 59px;
-    left: 28.5px;
-    top: 301px;
+
     
     font-family: 'Rubik';
     font-style: normal;
@@ -130,11 +143,7 @@ flex-grow: 0;
 
 .Heading4{
 
-    position: absolute;
-    width: 189px;
-    height: 44px;
-    left: 28.5px;
-    top: 435px;
+ 
     
     font-family: 'Rubik';
     font-style: normal;
@@ -153,10 +162,7 @@ flex-grow: 0;
 
     
 
-    /* width: 141px; */
-    /* height: 33px; */
-    /* left: 28.5px; */
-    /* top: 569px; */
+
     
     font-family: 'Rubik';
     font-style: normal;
@@ -172,11 +178,7 @@ flex-grow: 0;
 /* Heading 6 */
 .Heading6{
 
-    position: absolute;
-    width: 106px;
-    height: 25px;
-    left: 28.5px;
-    top: 703px;
+
     
     font-family: 'Rubik';
     font-style: normal;
@@ -196,11 +198,7 @@ flex-grow: 0;
 
 .Paragraph{
 
-    position: absolute;
-    width: 102px;
-    height: 25px;
-    left: 28px;
-    top: 837px;
+
     
     /* Paragraph */
     
@@ -214,3 +212,109 @@ flex-grow: 0;
     
     color: #000000;
 }
+
+
+.OutlinedButton {
+    /* Frame 22 */
+
+
+box-sizing: border-box;
+
+/* Auto layout */
+
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 9.39349px 18.787px;
+gap: 12.52px;
+
+width: 123.57px;
+height: 37.79px;
+
+/* Black */
+
+border: 0.78279px solid #1A0806;
+border-radius: 78.279px;
+
+/* Inside auto layout */
+
+flex: none;
+order: 2;
+flex-grow: 0;
+
+}
+
+
+.GradientText {
+    background: linear-gradient(90deg, #25232D 0%, #EC4B36 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+
+width:fit-content;
+}
+
+
+
+
+.ServiceCarouselItem {
+    /* Auto layout */
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 32px 64px;
+gap: 64px;
+
+width: 343.33px;
+height: 325px;
+
+/* Secondary */
+
+background: #25232D;
+box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.07), 0px 41.7776px 33.4221px rgba(0, 0, 0, 0.0503198), 0px 22.3363px 17.869px rgba(0, 0, 0, 0.0417275), 0px 12.5216px 10.0172px rgba(0, 0, 0, 0.035), 0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0282725), 0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0196802);
+border-radius: 10px;
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 1;
+
+}
+
+
+.ServiceMainText {
+padding: 16px 32px;
+background: #25232D;
+width: 600px;
+border-radius: 10px;
+
+}
+
+
+.BenefitsPills{
+align-items: center;
+padding: 24.4134px 48.8268px;
+gap: 48px;
+row-gap:24px;
+justify-content:center;
+
+
+
+
+/* Primary */
+
+background: #EB4B35;
+border-radius: 20.056px;
+
+/* Inside auto layout */
+
+
+}
+
+
+

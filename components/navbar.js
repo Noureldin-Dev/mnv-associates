@@ -1,4 +1,4 @@
-import {  Button, Drawer, DrawerBody, DrawerCloseButton, DrawerContent, DrawerFooter, DrawerHeader, DrawerOverlay, Flex, IconButton, useDisclosure } from '@chakra-ui/react'
+import {  Button, Divider, Drawer, DrawerBody, DrawerCloseButton, DrawerContent, DrawerFooter, DrawerHeader, DrawerOverlay, Flex, IconButton, useDisclosure } from '@chakra-ui/react'
 import Image from 'next/image'
 import React, { useRef } from 'react'
 import Logo from "../public/logo.png"
@@ -8,6 +8,7 @@ import Instagram from "../public/Instagram.svg"
 import Linkedin from "../public/Linkedin.svg"
 import {GiHamburgerMenu} from "react-icons/Gi"
 import ServicesMobileDropdown from './ServicesMobileDropdown'
+import { useRouter } from 'next/router'
 
 
 function Navbar() {
@@ -16,9 +17,10 @@ function Navbar() {
     const btnRef = useRef()
       
 
-
+const router = useRouter()
 
   return (
+    <div style={{marginBottom:"-8px"}}>
 <Flex
 alignItems='center'
 padding="0px 64px"
@@ -27,6 +29,8 @@ justifyContent="space-between"
 
 >
 <Image
+onClick={()=>router.push("/")}
+style={{cursor:"pointer"}}
 src={Logo}
 width={80}
 height={80}/>
@@ -95,14 +99,15 @@ id='DesktopNavBar'
 flex={1} justifyContent="space-evenly">
     <Flex 
     // background="orange.100"
+    alignItems="center"
     justifyContent="space-evenly"
     flex={1}
      
      >
-    <Button  variant="link" >About Us</Button>
+    <Button colorScheme='black' variant="link" >About Us</Button>
 
 <ServicesDropDown/>
-<Button  variant="link" >Blog</Button>
+<Button colorScheme="black" variant="link" >Blog</Button>
 <Button
 className='GradientButton'
 color="white"
@@ -117,6 +122,8 @@ variant="link" >Contact Us</Button>
 
 </Flex>
 </Flex>
+{/* <Divider/> */}
+</div>
   )
 }
 

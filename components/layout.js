@@ -6,7 +6,7 @@ export default function Layout({ children }) {
   return (
     <Flex  height="100vh" flexDir="column">
       <Navbar />
-      <main style={{flex:1, background:"yellow", padding:"0px 64px"}}>{children}</main>
+      <main id='MAIN' style={{flex:1, marginTop:"40px"}}>{children}</main>
       <Footer />
     </Flex>
   )
