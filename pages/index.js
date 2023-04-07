@@ -6,7 +6,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import CrossSell from "../components/CrossSell"
-import {BsArrowDown} from "react-icons/bs"
+import { ArrowDown } from 'react-bootstrap-icons'
 import Splash from "../public/Splash.svg"
 import ArticlesCarousel from "../components/ArticlesCarousel"
 
@@ -28,7 +28,7 @@ function Index() {
 <Button color="white" variant="link" width="fit-content" padding="16px 32px" className='GradientButton'>
   <Flex alignItems="center" justifyContent="center" gap="16px">
     <Text color="white">Get a FREE Consultation</Text>
-<BsArrowDown color="white" size={25}/>
+<ArrowDown color="white" size={25}/>
   </Flex>
 </Button>
     </Flex>
