@@ -1,4 +1,4 @@
-import { Flex, Text } from '@chakra-ui/layout'
+import { Flex, Text, Divider } from '@chakra-ui/layout'
 import Image from 'next/image'
 import React from 'react'
 import PricingIcon from "../public/PricingIcon.svg"
@@ -29,9 +29,9 @@ function Accounting_Bookkeeping() {
 
 
 
-
-<Flex gap="40px" flexDir="column" width="100%">
+<Flex marginTop="-40px" gap="40px" flexDir="column" width="100%">
     <Flex flexDir="column" gap="32px">
+<Divider/>
     <Text fontSize="lg">As your trusted financial partner, we'll carefully analyze your business's financial affairs and develop the most practical way to manage all your tax issues with transparency.</Text>
 <Text fontSize="lg">
 Plus, with our part-time CFO solution, you'll have access to valuable, timely, and independent perspectives that can help your business grow in ways you never thought possible.
@@ -53,9 +53,9 @@ With our CFO service, you can rest assured that your finances are in good hands.
 </Text>
     </Flex>
 </Flex>
-<Flex flexDir="column" gap="16px" marginBottom="-32px">
-<Text fontWeight="bold" fontSize={["3xl","3xl","3xl","4xl"]}>Stop wasting time. Let the experts handle your Accounting.</Text>
-<Text fontSize="lg">we're committed to delivering exceptional value and service to our clients. That's why we offer a free 30-minute advisory session to help you get started and answer any questions you may have about our accounting and bookkeeping services.</Text>
+<Flex flexDir="column" gap="16px" >
+<Text textAlign="center" fontWeight="bold" fontSize={["3xl","3xl","3xl","4xl"]}>Stop wasting time. Let the experts handle your Accounting.</Text>
+<Text textAlign="center" fontSize="lg">we're committed to delivering exceptional value and service to our clients. That's why we offer a free 30-minute advisory session to help you get started and answer any questions you may have about our accounting and bookkeeping services.</Text>
 </Flex>
 </Flex>
   )

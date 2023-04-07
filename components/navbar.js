@@ -6,7 +6,7 @@ import ServicesDropDown from "./ServicesDropDown"
 import Facebook from "../public/Facebook.svg"
 import Instagram from "../public/Instagram.svg"
 import Linkedin from "../public/Linkedin.svg"
-import {GiHamburgerMenu} from "react-icons/Gi"
+import { List } from 'react-bootstrap-icons'
 import ServicesMobileDropdown from './ServicesMobileDropdown'
 import { useRouter } from 'next/router'
 
@@ -44,7 +44,7 @@ height={80}/>
 //   size="lg"
 
     id='MobileBurgerMenu' ref={btnRef}  onClick={onOpen}
-  icon={<GiHamburgerMenu size="lg" />}
+  icon={<List size="30px" />}
 />
 
 

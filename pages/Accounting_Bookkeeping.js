@@ -1,4 +1,4 @@
-import { Flex, Text } from '@chakra-ui/layout'
+import { Flex, Text, Divider } from '@chakra-ui/layout'
 import Image from 'next/image'
 import React from 'react'
 import PricingIcon from "../public/PricingIcon.svg"
@@ -31,7 +31,8 @@ Both accounting and bookkeeping are essential for managing a company's finances 
 
 
 
-<Flex gap="40px" flexDir="column" width="100%">
+<Flex marginTop="-24px" gap="40px" flexDir="column" width="100%">
+<Divider/>
     <Text fontWeight="bold" fontSize={["2xl","2xl","2xl","3xl"]}>Why Choose us for your Accounting & Bookkeeping needs?</Text>
     <Flex flexDir="column" gap="24px">
     <Flex flexWrap="wrap" className='BenefitsPills'>
@@ -52,8 +53,8 @@ and finding innovative ways to make your experience with us nothing but outstand
     </Flex>
 </Flex>
 <Flex flexDir="column" gap="16px" marginBottom="-32px">
-<Text fontWeight="bold" fontSize={["3xl","3xl","3xl","4xl"]}>Stop wasting time. Let the experts handle your Accounting.</Text>
-<Text fontSize="lg">we're committed to delivering exceptional value and service to our clients. That's why we offer a free 30-minute advisory session to help you get started and answer any questions you may have about our accounting and bookkeeping services.</Text>
+<Text textAlign="center" fontWeight="bold" fontSize={["3xl","3xl","3xl","4xl"]}>Stop wasting time. Let the experts handle your Accounting.</Text>
+<Text textAlign="center" fontSize="lg">we're committed to delivering exceptional value and service to our clients. That's why we offer a free 30-minute advisory session to help you get started and answer any questions you may have about our accounting and bookkeeping services.</Text>
 </Flex>
 </Flex>
   )

@@ -5,10 +5,10 @@ function BookConsulation() {
   return (
 <Flex paddingBottom="40px" alignItems="center" flexWrap="wrap" rowGap="40px" gap="40px">
     <Flex flex={1} gap="16px" flexDir='column'>
-        <Text fontWeight='bold' fontSize={["2xl","2xl","3xl","4xl"]}>Book a FREE Consultation</Text>
-        <Text>We offer a free consultation to discuss your unique financial needs and offer tailored solutions that fit your business objectives.</Text>
+        <Text className='GradientText' fontWeight='bold' fontSize={["2xl","2xl","3xl","4xl"]}>Book a FREE Consultation</Text>
+        <Text fontSize="lg">We offer a free consultation to discuss your unique financial needs and offer tailored solutions that fit your business objectives.</Text>
         <Flex alignItems="center" flexDir="column" gap="8px">
-        <Text>Are you in a hurry? Reach us on</Text>
+        <Text >Are you in a hurry? Reach us on</Text>
         <Flex gap="16px">
         <Text fontWeight="bold">+971522860547</Text>
         <Text>or</Text>
