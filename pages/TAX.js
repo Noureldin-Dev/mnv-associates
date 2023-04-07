@@ -17,7 +17,7 @@ function Accounting_Bookkeeping() {
 
 <Flex alignItems='center' gap="64px" justifyContent="space-evenly" flexWrap="wrap-reverse" >
     
-    <Flex background="#EB4B35" gap="16px" className='ServiceMainText' flexDir="column">
+    <Flex backgroundColor="#EB4B35" gap="16px" className='ServiceMainText' flexDir="column">
     <Text fontSize="lg" color="white">We provide personalized assistance in relation to all tax-related matters in the UAE, helping you make sure that you always have the cash to pay FTA on time.</Text>
     <Text fontSize="lg" color="white">Whether you need help with filing your personal tax return or paying corporation tax on your company's profits, our advisors carefully analyze your company's financial affairs and develop the most practical way to manage all tax issues with transparency.</Text>
 
@@ -40,7 +40,7 @@ function Accounting_Bookkeeping() {
 alignItems="center" filter="drop-shadow(0px 100px 80px rgba(0, 0, 0, 0.07)) drop-shadow(0px 41.7776px 33.4221px rgba(0, 0, 0, 0.0503198)) drop-shadow(0px 22.3363px 17.869px rgba(0, 0, 0, 0.0417275)) drop-shadow(0px 12.5216px 10.0172px rgba(0, 0, 0, 0.035)) drop-shadow(0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0282725)) drop-shadow(0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0196802))" flexDir="column">
     <Flex justifyContent="center" flexWrap="wrap" gap="24px" >
         <Flex  flexDir="column" gap="24px">
-            <Flex background="#25232D" className='ServiceBar'>
+            <Flex backgroundColor="#25232D" className='ServiceBar'>
 <Text color="white" fontWeight="bold">
 Tax Agent Services
 </Text>
@@ -50,7 +50,7 @@ Tax Agent Services
 Tax Returns
 </Text>
             </Flex>
-            <Flex  background="#25232D" className='ServiceBar'>
+            <Flex  backgroundColor="#25232D" className='ServiceBar'>
 <Text color="white" fontWeight="bold">
 Excise Tax
 </Text>
@@ -62,7 +62,7 @@ Excise Returns Filing
             </Flex>
         </Flex>
         <Flex flexDir="column" gap="24px">
-            <Flex  background="#25232D" className='ServiceBar'>
+            <Flex  backgroundColor="#25232D" className='ServiceBar'>
 <Text  color="white" fontWeight="bold">
 Tax Filing
 </Text>
@@ -72,7 +72,7 @@ Tax Filing
 Excise Consultation
 </Text>
             </Flex>
-            <Flex  background="#25232D" className='ServiceBar'>
+            <Flex  backgroundColor="#25232D" className='ServiceBar'>
 <Text color="white" fontWeight="bold">
 Excise Tax Registration
 </Text>
@@ -85,7 +85,7 @@ Tax Domicile Certification
         </Flex>
     </Flex>
 
-    <Flex alignSelf="center" width={["445px","445px","445px","445px","100%"]} background="#25232D" className='ServiceBar'>
+    <Flex alignSelf="center" width={["445px","445px","445px","445px","100%"]} backgroundColor="#25232D" className='ServiceBar'>
 <Text color="white" fontWeight="bold">
 Excise Impact Study & implementation
 </Text>

@@ -1,4 +1,4 @@
-import {  Button, Divider, Drawer, DrawerBody, DrawerCloseButton, DrawerContent, DrawerFooter, DrawerHeader, DrawerOverlay, Flex, IconButton, useDisclosure } from '@chakra-ui/react'
+import {  Button, Divider, Drawer, DrawerBody, DrawerCloseButton, DrawerContent, DrawerFooter, DrawerHeader, DrawerOverlay, Flex, IconButton, Text, useDisclosure } from '@chakra-ui/react'
 import Image from 'next/image'
 import React, { useRef } from 'react'
 import Logo from "../public/logo.png"
@@ -12,6 +12,8 @@ import { useRouter } from 'next/router'
 
 
 function Navbar() {
+
+
 
     const { isOpen, onOpen, onClose } = useDisclosure()
     const btnRef = useRef()
@@ -36,16 +38,14 @@ width={80}
 height={80}/>
 <>
 
-<IconButton
-//   colorScheme='blue'
-  alignItems='center'
-  justifyContent="center"
-  display="flex"
-//   size="lg"
 
-    id='MobileBurgerMenu' ref={btnRef}  onClick={onOpen}
-  icon={<List  size="30px" />}
-/>
+<Flex
+    ref={btnRef}  onClick={onOpen}
+    id='MobileBurgerMenu'  alignItems='center'
+  justifyContent="center">
+<List  size="30px" />
+</Flex>
+
 
 
 
@@ -68,25 +68,43 @@ width={100}
 height={100}/>
                 </DrawerHeader>
       
-                <DrawerBody alignItems="center"  display="flex" gap={5} flexDirection="column">
+                <DrawerBody paddingBottom="32px" alignItems="center"  display="flex" gap={5} flexDirection="column">
                 <Button 
+                onClick={()=>{
+                  onClose()
+                  router.push('About')
+                }}
                 width="100%"
                 >About Us</Button>
 
-<ServicesMobileDropdown/>   
+<ServicesMobileDropdown onClose={onClose}/>   
 
                 <Button 
                 width="100%"
+                onClick={()=>{
+                  onClose()
+                  router.push('About')
+                }}
                 >Blog</Button>
-                <Button
+                <Flex
+                onClick={()=>{
+                  onClose()
+                  router.push("/contact")
+                
+                
+                }}
 className='GradientButton'
 color="white"
 height="57px"
  
 width="100%"
+alignItems="center"
+justifyContent='center'
 
 
-variant="link" >Contact Us</Button>
+variant="link" >
+<Text color="white">
+  Contact Us</Text></Flex>
                 
                 </DrawerBody>
       
@@ -104,15 +122,19 @@ flex={1} justifyContent="space-evenly">
     flex={1}
      
      >
-    <Button colorScheme='black' variant="link" >About Us</Button>
+    <Button onClick={()=>router.push("About")} colorScheme='black' variant="link" >About Us</Button>
 
 <ServicesDropDown/>
-<Button colorScheme="black" variant="link" >Blog</Button>
-<Button
+<Button onClick={()=>router.push("Blog")} colorScheme="black" variant="link" >Blog</Button>
+<Flex
+onClick={()=>router.push("/contact")}
 className='GradientButton'
 color="white"
-
-variant="link" >Contact Us</Button>
+justifyContent="center"
+alignItems="center"
+variant="link" >
+  <Text color="white">Contact Us</Text>
+  </Flex>
 </Flex>
 <Flex gap={2}>
 <Image src= {Instagram} width={30} height={30}/>

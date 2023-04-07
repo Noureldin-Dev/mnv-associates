@@ -28,9 +28,9 @@ function Vat() {
 <Text fontSize="lg">At MNV Associates, we pride ourselves on our expertise and attention to detail. Our team is dedicated to staying up-to-date with the latest regulations and compliance requirements to ensure that you are always in good standing with the authorities.</Text>
 
 </Flex>
-<Divider/>
-<Flex gap="80px" flexDir="column" width="100%">
+<Flex marginTop="-24px" gap="80px" flexDir="column" width="100%">
     <Flex flexDir="column" gap="24px">
+<Divider/>
 <Text fontWeight="bold" fontSize={["3xl","3xl","3xl","4xl"]}>Personalized Assistance</Text>
 <Text fontSize="lg">We take the time to understand your business and provide personalized advice and guidance to help you optimize your VAT position and minimize your tax liability.</Text>
 <Text fontSize="lg">Whether you are a small business owner, CEO, managing partner, entrepreneur, consultant, or a company director, we have the expertise that you need. Our team of VAT consultants in Dubai is always available to answer your questions, provide advice, and offer solutions to your VAT-related challenges.

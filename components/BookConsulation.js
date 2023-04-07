@@ -11,8 +11,8 @@ function BookConsulation() {
         <Flex alignItems="center" flexDir="column" gap="8px">
         <Text >Are you in a hurry? Reach us on</Text>
         <Flex gap="16px">
-        <Text fontWeight="bold">+971522860547</Text>
-        <Text fontWeight="bold">info@mnvassociates.com</Text>
+        <Text color="#EC4B36" fontWeight="bold">+971522860547</Text>
+        <Text color="#EC4B36" fontWeight="bold">info@mnvassociates.com</Text>
         </Flex>
         </Flex>
     </Flex>
@@ -23,27 +23,27 @@ function BookConsulation() {
 <Input placeholder='Name' />
 </Flex>
 <Flex gap="8px" flex={1} flexDir="column">
-        <Text>Your Name</Text>
-<Input placeholder='Name' />
+        <Text>Your Email</Text>
+<Input placeholder='Email' />
 </Flex>
 </Flex>
 <Flex gap="16px">
         <Flex gap="8px" flex={1} flexDir="column">
-        <Text>Your Name</Text>
-<Input isRequired placeholder='Name' />
+        <Text>Your Phone Number</Text>
+<Input isRequired placeholder='Phone Number' />
 </Flex>
 <Flex  gap="8px" flex={1} flexDir="column">
-        <Text>Your Name</Text>
-<Input isRequired placeholder='Name' />
+        <Text>Your Company's Name</Text>
+<Input isRequired placeholder='Company Name' />
 </Flex>
 </Flex>
 <Flex gap="8px" flex={1} flexDir="column">
         <Text>Your Inquiry</Text>
 <Textarea minHeight={200} noOfLines={1} isRequired placeholder='Inquiry' />
+</Flex>
 <Flex width="100%" alignItems="center" justifyContent="center" flex={1} flexDir="row" className='GradientButton'>
 <Text fontWeight="bold" fontSize="lg" color="white" >Send Message</Text>
 <Send size={20} color="white"/>
-</Flex>
 </Flex>
     </Flex>
 </Flex>
