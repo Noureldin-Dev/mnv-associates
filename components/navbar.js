@@ -44,7 +44,7 @@ height={80}/>
 //   size="lg"
 
     id='MobileBurgerMenu' ref={btnRef}  onClick={onOpen}
-  icon={<List size="30px" />}
+  icon={<List  size="30px" />}
 />
 
 

@@ -10,7 +10,7 @@ import ArticlesCarousel from "./ArticlesCarousel"
 import CrossSell from "./CrossSell"
 function Footer() {
   return (
-    <Flex padding="64px 64px" gap="0" flexDir="column">
+    <Flex padding={["64px 32px","64px 32px","64px 64px","64px 64px"]} gap="0" flexDir="column">
 
       <BookConsulation/>
 

@@ -12,7 +12,7 @@ import ArticlesCarousel from "../components/ArticlesCarousel"
 
 function Index() {
   return (
-    <Flex gap="80px" flexDir="column">
+    <Flex gap="40px" flexDir="column">
       <Flex rowGap="40px" flexWrap="wrap-reverse">
     <Flex gap="40px" flexDir="column">
       <Flex flexDir="column" gap="8px">
@@ -26,8 +26,10 @@ function Index() {
 
 
 <Button color="white" variant="link" width="fit-content" padding="16px 32px" className='GradientButton'>
-  <Flex alignItems="center" justifyContent="center" gap="16px">
-    <Text color="white">Get a FREE Consultation</Text>
+  <Flex onClick={()=>{
+    document.getElementById("BookCONSULTATION").scrollIntoView()
+  }} alignItems="center" justifyContent="center" gap="16px">
+    <Text  color="white">Get a FREE Consultation</Text>
 <ArrowDown color="white" size={25}/>
   </Flex>
 </Button>
