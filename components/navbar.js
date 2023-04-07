@@ -137,9 +137,9 @@ variant="link" >
   </Flex>
 </Flex>
 <Flex gap={2}>
-<Image src= {Instagram} width={30} height={30}/>
-<Image src= {Facebook} width={30} height={30}/>
-<Image src= {Linkedin} width={30} height={30}/>
+<Image onClick={()=>{window.open("https://www.instagram.com/mnvassociates/", '_blank');}} style={{cursor:"pointer"}} src= {Instagram} width={30} height={30}/>
+<Image onClick={()=>{window.open("https://www.facebook.com/mnvassociates/", '_blank');}}  style={{cursor:"pointer"}} src= {Facebook} width={30} height={30}/>
+<Image onClick={()=>{window.open("https://ae.linkedin.com/company/mnv-associates", '_blank');}}   style={{cursor:"pointer"}} src= {Linkedin} width={30} height={30}/>
 </Flex>
 
 </Flex>

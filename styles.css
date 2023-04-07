@@ -352,7 +352,7 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-padding: 32px 64px;
+padding: 32px 32px;
 gap: 64px;
 
 width: 343.33px;
@@ -434,4 +434,10 @@ flex: none;
 order: 0;
 align-self: stretch;
 flex-grow: 1;
+}
+
+.CarouselButton{
+padding:15px;
+    background: #EC4B36;
+    border-radius: 100px;
 }

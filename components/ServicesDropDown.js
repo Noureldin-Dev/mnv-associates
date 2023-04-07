@@ -8,9 +8,11 @@ import {
 import { ChevronDownIcon, ChevronUpIcon } from '@chakra-ui/icons'
 import { useState } from "react"
 import Link from "next/link"
+import { useRouter } from "next/router"
 
 export default function ServicesDropDown() {
 const [Open, setOpen] = useState(false)
+const router = useRouter()
     return (
         <>
 
@@ -19,7 +21,11 @@ const [Open, setOpen] = useState(false)
         variant="link"
         colorScheme="black"
                         transitionDelay="10s"
-
+onClick={()=>{
+    router.push("/").then(()=>{
+        document.getElementById("ServicesSection").scrollIntoView()
+    })
+}}
         onMouseEnter={()=>setOpen(true)}
                 onMouseLeave={()=>setOpen(false)}
                 >Services</Button>

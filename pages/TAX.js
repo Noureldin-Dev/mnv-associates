@@ -96,7 +96,7 @@ Excise Impact Study & implementation
 
   
   <Flex flexDir="column" gap="24px">
-<Text textAlign='center' fontWeight="bold" fontSize={["3xl","3xl","3xl","4xl"]}>Whatever your tax needs, we have the expertise to help.</Text>
+<Text className='GradientText' textAlign='center' fontWeight="bold" fontSize={["3xl","3xl","3xl","4xl"]}>Whatever your tax needs, we have the expertise to help.</Text>
 <Text textAlign='center' fontSize="lg">Contact us today to speak with one of our tax consultants and learn more about how we can help you or your company meet all tax responsibilities while maximizing savings and minimizing risk. Call us today: +971523750920.</Text>
 </Flex>
 </Flex>

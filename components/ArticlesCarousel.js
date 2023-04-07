@@ -24,22 +24,22 @@ currentSlide={currentSlide}
       <Slider style={{height:"560px", position:'relative'}}>
         <Slide index={0}>
     <Flex gap="80px" padding="80px">
-    <ArticleCarouselItem Title="Accounting & Bookkeeping" Destination={"k"}/>  
-    <ArticleCarouselItem Title="Accounting & Bookkeeping" Destination={"k"}/>  
-    <ArticleCarouselItem Title="Accounting & Bookkeeping" Destination={"k"}/>  
+    <ArticleCarouselItem Title="UAE introduces First Corporate Tax" Destination={"k"}/>  
+    <ArticleCarouselItem Title="UAE introduces First Corporate Tax" Destination={"k"}/>  
+    <ArticleCarouselItem Title="UAE introduces First Corporate Tax" Destination={"k"}/>  
     </Flex>
 </Slide>
         <Slide index={1}>
 <Flex gap="80px" padding="80px">
-    <ArticleCarouselItem Title="Accounting & Bookkeeping" Destination={"k"}/>  
-    <ArticleCarouselItem Title="Accounting & Bookkeeping" Destination={"k"}/>  
-    <ArticleCarouselItem Title="Accounting & Bookkeeping" Destination={"k"}/>  
+    <ArticleCarouselItem Title="UAE introduces First Corporate Tax" Destination={"k"}/>  
+    <ArticleCarouselItem Title="UAE introduces First Corporate Tax" Destination={"k"}/>  
+    <ArticleCarouselItem Title="UAE introduces First Corporate Tax" Destination={"k"}/>  
     </Flex>
 </Slide>
         <Slide index={2}>Slide 3</Slide>
       </Slider>
-<Flex marginTop={-20} width="100%" alignItems="center" justifyContent="center"  >
-      <Button onClick={()=>{{
+<Flex gap="8px" marginTop={-20} width="100%" alignItems="center" justifyContent="center"  >
+      <Button  borderRadius={100} _hover={{background:'black'}} background='#ED4B37' className='CarouselButton'  onClick={()=>{{
     
     if (currentSlide == 0){
         return
@@ -48,17 +48,17 @@ currentSlide={currentSlide}
         setCurrentSlide(currentSlide-1)
     }
     }}}>
-<ChevronLeft/>
+<ChevronLeft size={20} color="white" />
 
 </Button>
-<Button onClick={()=>{
+<Button  borderRadius={100} _hover={{background:'black'}} background='#ED4B37' className='CarouselButton' onClick={()=>{
     if (currentSlide == 1){
         setCurrentSlide(0)
     }else{
         setCurrentSlide(currentSlide+1)
     }
     }}>
-    <ChevronRight/>
+    <ChevronRight size={20} color="white" />
     </Button>
 
 </Flex>

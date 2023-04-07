@@ -45,7 +45,7 @@ function Vat() {
 </Flex>
   
   <Flex flexDir="column" gap="24px">
-<Text textAlign='center' fontWeight="bold" fontSize={["3xl","3xl","3xl","4xl"]}>Whatever your tax needs, we have the expertise to help.</Text>
+<Text className='GradientText' textAlign='center' fontWeight="bold" fontSize={["3xl","3xl","3xl","4xl"]}>Whatever your tax needs, we have the expertise to help.</Text>
 <Text textAlign="center" fontSize="lg">If you're looking for reliable, efficient, and affordable VAT services in Dubai, look no further than MNV Associates. Contact us today to schedule a consultation or request a quote. Let us handle your VAT needs, so you can focus on growing your business.</Text>
 </Flex>
 </Flex>

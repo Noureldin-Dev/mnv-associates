@@ -53,7 +53,7 @@ and finding innovative ways to make your experience with us nothing but outstand
     </Flex>
 </Flex>
 <Flex flexDir="column" gap="16px" marginBottom="-32px">
-<Text textAlign="center" fontWeight="bold" fontSize={["3xl","3xl","3xl","4xl"]}>Stop wasting time. Let the experts handle your Accounting.</Text>
+<Text className='GradientText' textAlign="center" fontWeight="bold" fontSize={["3xl","3xl","3xl","4xl"]}>Stop wasting time. Let the experts handle your Accounting.</Text>
 <Text textAlign="center" fontSize="lg">we're committed to delivering exceptional value and service to our clients. That's why we offer a free 30-minute advisory session to help you get started and answer any questions you may have about our accounting and bookkeeping services.</Text>
 </Flex>
 </Flex>

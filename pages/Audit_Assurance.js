@@ -36,7 +36,7 @@ function Accounting_Bookkeeping() {
 
 
 <Flex flexDir="column" gap="24px">
-<Text textAlign='center' fontWeight="bold" fontSize={["3xl","3xl","3xl","4xl"]}>What are you waiting for?</Text>
+<Text className='GradientText' textAlign='center' fontWeight="bold" fontSize={["3xl","3xl","3xl","4xl"]}>What are you waiting for?</Text>
 <Text textAlign="center" fontSize="lg">Simply complete the contact form below or call/message us on WhatsApp at +971 52 286 0547. We look forward to hearing from you!</Text>
 </Flex>
 

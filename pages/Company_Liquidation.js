@@ -40,7 +40,7 @@ function Accounting_Bookkeeping() {
 
 
 <Flex flexDir="column" gap="24px">
-<Text textAlign='center' fontWeight="bold" fontSize={["3xl","3xl","3xl","4xl"]}>Don't let financial pressures weigh you down.</Text>
+<Text className='GradientText' textAlign='center' fontWeight="bold" fontSize={["3xl","3xl","3xl","4xl"]}>Don't let financial pressures weigh you down.</Text>
 <Flex flexDir='column'>
 <Text textAlign="center" fontSize="lg">If you are considering liquidating your company, don't hesitate to contact our team today.</Text>
 <Text textAlign="center" fontSize="lg">We are here to help you every step of the way and provide you with a seamless and stress-free liquidation process.</Text>

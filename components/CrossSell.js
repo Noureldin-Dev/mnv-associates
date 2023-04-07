@@ -24,22 +24,22 @@ currentSlide={currentSlide}
       <Slider style={{height:"560px", position:'relative'}}>
         <Slide index={0}>
     <Flex gap="80px" padding="80px">
-    <ServiceCarouselItem Title="Accounting & Bookkeeping" Destination={"k"}/>  
-    <ServiceCarouselItem Title="Accounting & Bookkeeping" Destination={"k"}/>  
-    <ServiceCarouselItem Title="Accounting & Bookkeeping" Destination={"k"}/>  
+    <ServiceCarouselItem Title="Accounting & Bookkeeping" Destination={"Accounting_Bookkeeping"}/>  
+    <ServiceCarouselItem Title="CFO Services" Destination={"CFO"}/>  
+    <ServiceCarouselItem Title="Tax Services" Destination={"TAX"}/>  
     </Flex>
 </Slide>
         <Slide index={1}>
 <Flex gap="80px" padding="80px">
-    <ServiceCarouselItem Title="Accounting & Bookkeeping" Destination={"k"}/>  
-    <ServiceCarouselItem Title="Accounting & Bookkeeping" Destination={"k"}/>  
-    <ServiceCarouselItem Title="Accounting & Bookkeeping" Destination={"k"}/>  
+    <ServiceCarouselItem Title="VAT Services" Destination={"VAT"}/>  
+    <ServiceCarouselItem Title="Audit & Assurance" Destination={"Audit_Assurance"}/>  
+    <ServiceCarouselItem Title="Company Liquidation" Destination={"Company_Liquidation"}/>  
     </Flex>
 </Slide>
         <Slide index={2}>Slide 3</Slide>
       </Slider>
-<Flex marginTop={-20} width="100%" alignItems="center" justifyContent="center"  >
-      <Button onClick={()=>{{
+<Flex gap="8px" marginTop={-20} width="100%" alignItems="center" justifyContent="center"  >
+      <Button borderRadius={100} _hover={{background:'black'}} background='#ED4B37' onClick={()=>{{
     
     if (currentSlide == 0){
         return
@@ -48,17 +48,17 @@ currentSlide={currentSlide}
         setCurrentSlide(currentSlide-1)
     }
     }}}>
-<ChevronLeft/>
+<ChevronLeft size={20} color="white"/>
 
 </Button>
-<Button onClick={()=>{
+<Button  borderRadius={100} _hover={{background:'black'}} background='#ED4B37'  onClick={()=>{
     if (currentSlide == 1){
         setCurrentSlide(0)
     }else{
         setCurrentSlide(currentSlide+1)
     }
     }}>
-    <ChevronRight/>
+    <ChevronRight size={20} color="white"/>
     </Button>
 
 </Flex>
