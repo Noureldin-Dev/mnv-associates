@@ -5,8 +5,8 @@ import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-re
 import 'pure-react-carousel/dist/react-carousel.es.css';
 import { Flex, Text } from '@chakra-ui/layout';
 import ArticleCarouselItem from './ArticleCarouselItem';
-import {AiOutlineArrowLeft} from "react-icons/ai"
-import {AiOutlineArrowRight} from "react-icons/ai"
+import { ChevronRight } from 'react-bootstrap-icons';
+import { ChevronLeft } from 'react-bootstrap-icons';
 import { Button } from '@chakra-ui/button';
 const Carousel = () => {
     const [currentSlide, setCurrentSlide] = useState(0)
@@ -48,7 +48,7 @@ currentSlide={currentSlide}
         setCurrentSlide(currentSlide-1)
     }
     }}}>
-<AiOutlineArrowLeft/>
+<ChevronLeft/>
 
 </Button>
 <Button onClick={()=>{
@@ -58,7 +58,7 @@ currentSlide={currentSlide}
         setCurrentSlide(currentSlide+1)
     }
     }}>
-    <AiOutlineArrowRight/>
+    <ChevronRight/>
     </Button>
 
 </Flex>
