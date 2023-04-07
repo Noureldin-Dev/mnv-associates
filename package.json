@@ -14,11 +14,13 @@
     "@chakra-ui/system": "^2.5.5",
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
+    "@netlify/plugin-nextjs": "^4.33.0",
     "framer-motion": "^10.10.0",
     "next": "13.2.4",
     "pure-react-carousel": "^1.30.1",
     "react": "18.2.0",
     "react-bootstrap-icons": "^1.10.3",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "sharp": "^0.32.0"
   }
 }
