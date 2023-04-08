@@ -2,8 +2,15 @@ import { Flex, Text, Divider } from '@chakra-ui/layout'
 import Image from 'next/image'
 import React from 'react'
 import AuditImage from "../public/AuditImage.svg"
+import Head from 'next/head'
 function Accounting_Bookkeeping() {
   return (
+    <>
+            <Head>
+        <title>Audit & Assurance</title>
+        <meta name="description" content="MNV Associates - The Best Accounting Firm In Dubai" />
+      </Head>
+      
 <Flex gap="80px" flexDir="column">
     <Flex  gap="24px" flexDir="column"> 
     <Flex flexDir="column" gap="8px">
@@ -47,6 +54,7 @@ function Accounting_Bookkeeping() {
 
 
 </Flex>
+</>
   )
 }
 

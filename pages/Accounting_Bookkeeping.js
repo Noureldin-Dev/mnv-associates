@@ -5,8 +5,15 @@ import PricingIcon from "../public/PricingIcon.svg"
 import AccountingImage from "../public/AccountingImage.svg"
 import AwardIcon from "../public/AwardIcon.svg"
 import BankIcon from "../public/BankIcon.svg"
+import Head from 'next/head'
 function Accounting_Bookkeeping() {
   return (
+    <>
+        <Head>
+        <title>Accounting & Bookkeeping</title>
+        <meta name="description" content="MNV Associates - The Best Accounting Firm In Dubai" />
+      </Head>
+      
 <Flex gap="80px" flexDir="column">
     <Flex  gap="24px" flexDir="column"> 
     <Flex flexDir="column" gap="8px">
@@ -57,6 +64,7 @@ and finding innovative ways to make your experience with us nothing but outstand
 <Text textAlign="center" fontSize="lg">we're committed to delivering exceptional value and service to our clients. That's why we offer a free 30-minute advisory session to help you get started and answer any questions you may have about our accounting and bookkeeping services.</Text>
 </Flex>
 </Flex>
+</>
   )
 }
 

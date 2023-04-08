@@ -8,13 +8,13 @@ import ArticleCarouselItem from './ArticleCarouselItem';
 import { ChevronRight } from 'react-bootstrap-icons';
 import { ChevronLeft } from 'react-bootstrap-icons';
 import { Button } from '@chakra-ui/button';
-const Carousel = () => {
+const Carousel = ({isBlogPage}) => {
     const [currentSlide, setCurrentSlide] = useState(0)
   return ( 
-    <Flex className='HideOnMobile' gap={0} flexDir="column">
-    <Text className='HideOnMobile' marginBottom="-40px" fontSize="3xl">Latest Accounting insights in Dubai</Text>
+    <Flex className={isBlogPage?"":'HideOnMobile'} gap={0} flexDir="column">
+    <Text className={isBlogPage?"":'HideOnMobile'} marginBottom="-40px" fontSize="3xl">Latest Accounting insights in Dubai</Text>
     <CarouselProvider
-className='HideOnMobile'
+className={isBlogPage?"":'HideOnMobile'}
 currentSlide={currentSlide}
       naturalSlideWidth={100}
       naturalSlideHeight={120}

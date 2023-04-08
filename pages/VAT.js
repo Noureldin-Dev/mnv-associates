@@ -2,8 +2,15 @@ import { Flex, Text, Divider } from '@chakra-ui/layout'
 import Image from 'next/image'
 import React from 'react'
 import TaxImage from "../public/VATImage.svg"
+import Head from 'next/head'
 function Vat() {
   return (
+    <> 
+                   <Head>
+    <title>VAT Services</title>
+    <meta name="description" content="MNV Associates - The Best Accounting Firm In Dubai" />
+  </Head>
+  
 <Flex gap="56px" flexDir="column">
     <Flex  gap="24px" flexDir="column"> 
     <Flex flexDir="column" gap="8px">
@@ -50,6 +57,7 @@ function Vat() {
 </Flex>
 </Flex>
 </Flex>
+</>
   )
 }
 

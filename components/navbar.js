@@ -83,7 +83,7 @@ height={100}/>
                 width="100%"
                 onClick={()=>{
                   onClose()
-                  router.push('About')
+                  router.push('Blog')
                 }}
                 >Blog</Button>
                 <Flex

@@ -4,11 +4,11 @@ import ServiceBox from './ServiceBox'
 
 function ServicesSection() {
   return (
-<Flex  marginTop="-24px"
+<Flex alignSelf="center" marginTop="-24px"
 // background="yellow" 
 gap="40px" flexDir="column">
 <Text id="ServicesSection" fontWeight="bold" fontSize={["3xl","3xl","3xl","4xl"]}>Our Services</Text>
-<Flex alignSelf="center" gap="32px" rowGap="32px" flexWrap="wrap">
+<Flex justifyContent="center" alignSelf="center" gap="32px" rowGap="32px" flexWrap="wrap">
     <Flex gap="32px" flexDir="column">
     <ServiceBox Title="Accounting & Bookkeeping" Description="Maximize tax efficiency and compliance with expert tax services." Destination="Accounting_Bookkeeping"/>
     <ServiceBox Title="Tax Services" Description="Get peace of mind with our reliable tax services." Destination="TAX"/>
